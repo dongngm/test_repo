@@ -66,8 +66,3 @@ if __name__ == "__main__":
 
         mlflow.sklearn.log_model(lr, "model")
 
-
-datasets = {
-   "train": Dataset("/path/to/train", {"num_cols": 15, "dist": "random"}),
-   "test": Dataset("/path/to/test", {"num_cols": 15, "dist": "gaussian"})
-}
